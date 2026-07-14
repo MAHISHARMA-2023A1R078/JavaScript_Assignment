@@ -326,6 +326,7 @@ ccols.forEach(function (ele) {
   console.log(ele.name);
 });
 
+// Bonus Challenge: Inventory Management
 let inventory = [
   {
     id: 1,
