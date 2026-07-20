@@ -45,11 +45,11 @@ function greets(callback) {
   console.log(callback);
 }
 
-function print() {
+function prints() {
   console.log("This is called as CallBack Function");
 }
 
-greets(print); //as a value passing function name
+greets(prints); //as a value passing function name
 
 function greety(callback) {
   callback();
