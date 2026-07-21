@@ -200,19 +200,28 @@ let prods = prodcat.forEach((prods) => {
   let productCard = document.createElement("div");
   productCard.className = "product-card";
   productCard.innerHTML = `
-  <br>
-  <b>Image Source: 
-  </b> <img src="${prods.image}" alt="${prods.title}"/>
-  <br>
-  <p><b>Product ID:</b>${prods.id}</p>
-  <br>
-  <p><b>Category:</b>${prods.category}</p>
-  <br>
-  <p><b>Title:</b>${prods.title}</p>
-  <br>
-  <p><b>Description:</b>${prods.description}</p>
-  <br>
-  <p><b>Price:</b> $ ${prods.price}</p>
+  <div class="product-image-wrapper">
+     <img class="product-image" src="${prods.image}" alt="${prods.title}">
+     <span class="product-id">
+       #${prods.id}
+       </span>
+  </div>
+<div class="product-content">
+<p class="product-category">
+${prods.category}
+</p>
+<h3 class="product-title">
+${prods.title}
+</h3>
+<p class="product-description">
+${prods.description}
+</p>
+<div class="product-footer">
+<p class="price-label">Price</p>
+<p class="product-price"> $ ${prods.price}</p>
+</div>
+</div>
+</div>
   `;
 
   //Step 9: Append Every Product Card
